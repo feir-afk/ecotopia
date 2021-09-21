@@ -1,0 +1,60 @@
+.banner {
+  background-image: url(work.jpg);
+  background-position: center;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(60vh);
+
+  /* for define height of the picture.*/
+  min-height: 700px;
+}
+
+h2 {
+  position: absolute;
+  font-weight: lighter;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 80px;
+  color: whitesmoke;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.banner h3 {
+  position: absolute;
+  font-weight: bold;
+  text-align: center;
+  color: whitesmoke;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+}
+
+#introduction {
+  background: white;
+  font-weight: lighter;
+  text-align: center;
+  letter-spacing: 1px;
+  min-height: 300px;
+  padding: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .content-section {
+    flex-direction: column;
+  }
+}
+
+.article-title h3 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.article-title p {
+  font-size: 20px;
+  text-align: center;
+}

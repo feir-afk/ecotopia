@@ -1,0 +1,509 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+  /* display: flex;
+  justify-content: center;
+  align-items: center;*/
+  body {
+      margin: 0;
+      padding: 0;
+      background-image: url(../53.jpg); 
+       background-repeat: no-repeat;
+       background-size: 1550px 722px;
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 800;
+      height: 100vh;s
+       background: white;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .container {
+      width: 80%;
+      margin: 0 auto;
+  }
+
+  header {
+    background: #55d6aa;
+  }
+
+  header::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  .logo {
+    float: left;
+    padding: 10px 0;
+  }
+
+  nav {
+    float: right;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+
+    position: relative;
+  }
+
+  nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  nav a:hover {
+    color: #000;
+  }
+
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+  }
+
+  nav a:hover::before {
+    width: 100%;
+  }
+
+  .wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .item{
+    padding: 10px;
+  }
+  .btn{
+    outline: none;
+    display: block;
+    border: 0;
+    font-size: 16px;
+    line-height: 1;
+    padding: 16px 30px;
+    border-radius: 30px;
+    background: #55d6aa;
+    cursor: pointer;
+    transition: all 0.2 linear;
+
+  }
+
+  .btn:hover,
+  .btn:focus{
+    background: #48bd95;
+  }
+
+  .btn:active{
+    background: #389c7a;
+  }
+
+  .donation-container {
+  height: 500px;
+  font-family: 'Montserrat' sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.donation-box {
+  width: 390px;
+  height: 400px;
+  background-color: #F5F5F5;
+  border-top-left-radius: 4px;
+    position: relative;
+  border-top-right-radius: 4px;
+  margin-left: 100px;
+  margin-top: 150px;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+.donation-box .title {
+  background-color: #55d6aa;
+  width: 100%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  color: white;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 15px;
+}
+.donation-box .donate-button {
+  background-color: #55d6aa;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 18px;
+  bottom: 0px;
+  position: absolute;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.donation-box .fields {
+  width: 59%;
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 15px;
+}
+
+.donation-box .fields input {
+  width: 90%;
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 4px;
+  border-width: 0px;
+  color: #5C5C5C;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin-bottom: 10px;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-input-placeholder {
+   color: #c72828;
+   font-size: 15px;
+}
+
+:-ms-input-placeholder {  
+   color: #cdcdcd;
+   font-size: 15px;
+}
+
+.donation-box .amount {
+  width: 30%;
+  display: block;
+  position: absolute;
+  top: 60px;
+  right: 15px;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+.labol{
+  position: relative;
+  color: #01cc65;
+  font-size: 15px;
+  border: 2px solid #01cc65;
+  border-radius: 5px;
+  padding: 10px 30px;
+  display: flex;
+   align-items: center;
+  cursor: pointer;
+}
+
+.labol.before{
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  border: 3px solid #01cc65;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+input[type="radio"]:checked + .labol{
+background-color: #393939;
+color: white;
+
+}
+
+input[type="radio"].checked + .labol.before{
+
+  height: 16px;
+  width: 16px;
+  border: 10px solid white;
+  background-color: #393939;
+}
+
+
+
+.checkboxes {
+  position: absolute;
+  top: 242px;
+  left: 13px;
+}
+
+.checkboxes label {
+  position: relative;
+  top: -8px;
+  font-size: 13px;
+  color: gray;
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  background-color: #fafafa;
+  border: 1px solid #C1D82F;
+  padding: 9px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+  outline: none;
+  
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+.checkbox:active, .checkbox:checked:active {
+  
+}
+
+.checkbox:checked {
+  background-color: #C1D82F;
+  border: 1px solid #C1D82F;
+  color: white;
+}
+
+.checkbox:checked:after {
+  content: '\2714';
+  font-size: 14px;
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  color: white;
+}
+
+.confirm {
+  display: none;
+  position: absolute;
+  top: 335px;
+  left: 15px;
+  right: 15px;
+  font-size: 16px;
+  
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+.confirm i {
+  font-weight: bold;
+  text-decoration: underline;
+  font-style: normal;
+}
+.oof{
+  background-color: transparent;
+  border-radius: 15px 50px;
+  color: white;
+  width: 100px;
+  height: 30px;
+
+}
+/**/
+.slider{
+  position: absolute;
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 600px;
+  margin-top: -550px;
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 800px;
+  height: 500px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  width: 800px;
+  margin-top: -40px;
+  margin-left: 310px;
+    display: flex;
+  right: 100px;
+}
+
+.manual-btn{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #40D3DC;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/css for automatic navigation/
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #40D3DC;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #40D3DC;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #40D3DC;
+}
+
+.box{
+  position: absolute;
+
+}
+
+footer{
+    position:  bottom;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100%;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #55d6aa;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}

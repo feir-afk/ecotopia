@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+" />
+<head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="Home.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="../favicon.png"> 
+
+</head>
+<body>
+
+    <table border="0" width="100%" height="450">
+        <tr>
+           <header>
+    <div class="container">
+      <h1 class="logo">ECOTOPIA</h1>
+
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="ourwork.html">Our Work</a></li>
+          <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+        </tr>
+        <tr height="450">
+         
+            <td >
+                <center>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QQYgCxu988s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </center>
+            </td>
+        </tr>
+        <tr>        
+            <td colspan="1" height="300">
+                <h1 class="protect">Protecting Our Planet Starts with You By Donating!</h1>
+            <div class="wrap">
+                <div class="item">
+                <button class="btn"><a href="Donation.html" style="text-decoration: none; color: black;">DONATE</a></button>
+                </div>
+            </div>
+    
+
+            </td>
+        </tr>
+    </table>
+
+
+  <section class="urmom">
+      <div class="container reveal">
+        <div class="cards">
+          <div class="text-card">
+            <p><h2>FOOD</h2>It’s time to reconsider food.Around the globe, food production, distribution, management and waste threaten wildlife, wild places and the planet itself.Today, 7.3 billion people consume 1.6 times what the earth’s natural resources can supply. By 2050, the world’s population will reach 9 billion and the demand for food will double.So how do we produce more food for more people without expanding the land and water already in use? We can’t double the amount of food. Fortunately we don’t have to—we have to double the amount of food available instead. In short, we must freeze the footprint of food.</p>
+          </div>
+          <div class="text-card">
+            <p><h2>CLIMATE</h2>Our world is changing faster than anyone predicted. Already, freshwater supplies are shrinking, agricultural yields are dropping, our forests are burning, and rising oceans are more acidic—all, in part, due to a warming climate. As our natural world changes around us, so does our way of life. Coastal home values drop as insurance premiums rise; drought reduces feed for American farmers’ cattle and water for their crops; more pollen and dust in the air aggravates asthma and allergies in kids and adults alike.</p>
+          </div>
+              <div class="text-card">
+            <p><h2>WATER</h2>All life needs water. It is the world’s most precious resource, fueling everything from the food you eat, to the cotton you wear, to the energy you depend upon every day. Freshwater habitats—such as lakes, rivers, streams, wetlands and aquifers—house an incredible proportion of the world’s biodiversity: more than 10% of all known animals and about 50% of all known fish species. Yet despite the massive role water plays for people and nature, it is a surprisingly finite resource. Less than 1% of the world's water is fresh and accessible.</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="urmom">
+      <div class="container reveal">
+        <div class="cards">
+          <div class="text-card">
+            <p><h2>WILDLIFE</h2>Saving nature is at the very heart of what we do as ecotopia. For 60 years, we have made it our mission to find solutions that save the marvelous array of life on our planet by applying the best science available and working closely with local communities. But our work is far from done. Humans are behind the current rate of species extinction, which is at least 100–1,000 times higher than nature intended. We’ve seen an astonishing 60% decline in the size of populations of mammals, birds, fish, reptiles, and amphibians in just over 40 years, according to ECOTOPIA'S report.</p>
+          </div>
+          <div class="text-card">
+            <p><h2>FOREST</h2>The dawn chorus of birds singing, monkeys howling, frogs calling and insects buzzing. The crystal clear waterfalls that are perfect for a refreshing afternoon swim. Fireflies illuminating trees at night. The beauty and tranquility of forests all over the world—from tropics to the tundra—inspire all of us. We know that eight out of 10 species found on land live in forests. Approximately 750 million people, including 60 million Indigenous people, live in forests, too.</p>
+          </div>
+          <div class="text-card">
+            <p><h2>OCEANS</h2>The ocean is a planetary superpower. Home to spectacular ecosystems and treasured wildlife, the ocean covers 71% of our Earth’s surface and sustains the lives of billions of people. It regulates our climate, produces half the oxygen we breathe, and fuels the water cycle that produces rain and freshwater.Studies show that when ocean ecosystems are resilient, people nearby are more resilient too. A group of researchers looked at more than 100 studies to better understand the connection between marine protection and human health, and found that a majority of people realize the social, health, economic, governance, and ecological benefits from a healthy ocean. But those benefits are not guaranteed.</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+
+    <script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal(){
+      var reveals = document.querySelectorAll('.reveal');
+
+      for(var i = 0; i < reveals.length; i++){
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('active');
+        }
+        else{
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+    </script>
+
+
+<footer>
+        <div class="footer-content">
+            <h3>ecotopia</h3>
+            <p>TAKE CARE YOUR ENVIRONMENT!</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2021 ECOTOPIA. designed by <span> us</span></p>
+        </div>
+    </footer>
+
+
+</body>
+</html>

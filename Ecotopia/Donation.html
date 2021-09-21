@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+" />
+  <head>
+    <meta charset="utf-8">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="Donation.css">
+    
+  </head>
+  <body>
+  <header>
+    <div class="container">
+      <h1 class="logo">ECOTOPIA</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="ourwork.html">Our Work</a></li>
+          <li><a href="Donation.html">Donation</a></li>
+          <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="donation-container">
+  <form>
+            
+            <div class="donation-box">
+              <div class="title">Donation Information</div>
+              
+              <div class="fields">
+                <input type="text" id="firstName" placeholder="First Name"> </input>
+                <input type="text" id="lastName" placeholder="Last Name"> </input>
+                <input type="text" id="email" placeholder="Email"> </input>
+              </div>
+              <div class="amount">
+                 <div class="box">
+    <input type="radio" name="size" id="small">
+    <label class="labol" for="small">RM 20</label><br>
+    <input type="radio" name="size" id="medium">
+    <label class="labol" for="medium">RM 50</label><br>
+    <input type="radio" name="size" id="100">
+    <label class="labol" for="100">RM 100</label><br>
+    <input type="radio" name="size" id="500">
+    <label class="labol" for="500">RM 500</label><br>
+      </div>
+              </div>
+
+          
+          <div class="checkboxes">
+          <input type="checkbox" id="receipt" class="checkbox" />
+          <label for="receipt">Email Me A Receipt</label>
+          <br />
+          <input type="checkbox" id="list" class="checkbox" />
+          <label for="list">Newsletter</label>
+          </div>
+          
+          <div class="confirm">
+            
+          </div>
+              <div class="donate-button"><button type="submit"class="oof"> Donate Now</button></div>
+            </div>
+            </form>
+        </div>
+
+             <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <div class="slide first">
+          <img src="aa.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="bb.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="cc.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="ee.jpg" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 5000);
+    </script>
+    <footer>
+        <div class="footer-content">
+            <h3>ecotopia</h3>
+            <p>TAKE CARE YOUR ENVIRONMENT!</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2021 ECOTOPIA. designed by <span> us</span></p>
+        </div>
+    </footer>
+
+
+</body>
+</html>
